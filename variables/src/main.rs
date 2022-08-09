@@ -41,4 +41,23 @@ fn main() {
     println!("{}, {}, {}, {}, {}", a_min, b_min, c_min, d_min, e_min);
     println!("{}, {}, {}, {}, {}", a_max, b_max, c_max, d_max, e_max);
 
+    let a_min: f32 = std::f32::MIN;
+    let b_min: f64 = std::f64::MIN;
+
+    let a_max: f32 = std::f32::MAX;
+    let b_max: f64 = std::f64::MAX;
+
+    println!("{}, {}", a_min, b_min);
+    println!("{}, {}", a_max, b_max);
+
+    let ch1: char = 'X';
+    let ch2 = '\u{2603}';
+
+    println!("{}, {}", ch1, ch2);
+
+    let on: bool = true;
+    let off: bool = false;
+
+    println!("{}, {}, {}", on, off, !on);
+    
 }
