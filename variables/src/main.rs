@@ -60,4 +60,29 @@ fn main() {
 
     println!("{}, {}, {}", on, off, !on);
     
+    let first = 7.0;    //must have matching types to perform math operations
+    let second = 4.0;
+
+    println!("{}, {}, {}, {}, {}", 
+        first+second,
+        first-second,
+        first*second,
+        first/second,
+        first%second
+    );
+
+    let btc = "Bitcoin";
+    let eth = "Ethereum";
+    let sol = "Solana";
+
+    println!("Normal Order: {}, {}, {}", btc, eth, sol);
+    println!("Flippening: {1}, {0}, {2}, {2}", btc, eth, sol);
+    println!(
+        "Kwargs: {solana}, {ethereum}, {bitcoin}",
+        bitcoin=btc,
+        ethereum=eth,
+        solana=sol    
+    );
+
+
 }
