@@ -1,5 +1,5 @@
 fn main() {
-    let mut x = 2; // must include 'mut' in declaration to be able to edit it later
+    let mut x = 2; // must include 'mut' in declara&tion to be able to edit it later
     let y = 5; // similar to a constant, not changeable 
     x = x + 1;
     println!("Hello, world! {} + {} = {}", x, y, x+y);
@@ -84,5 +84,36 @@ fn main() {
         solana=sol    
     );
 
+
+    let message = format!(       
+        "Kwargs: {solana}, {ethereum}, {bitcoin}",
+        bitcoin=btc,
+        ethereum=eth,
+        solana=sol   
+    );
+    println!("Look I've made this special {message}", message=message);
+
+    let cheat_code: [u32; 4] = [19, 65, 9, 17];
+    let zeros = [0.0; 10];
+    println!("Array: {:?}", cheat_code);
+    println!("First element of the array: {}", cheat_code[0]);
+
+    println!("Arrah(length: {}): {:?}", zeros.len(), zeros);
+
+    let slice = &cheat_code[1..3];
+    println!("Slice of cheat_code: {:?} {}", slice, slice.len());
+
+    let name: &str = "Zsolt";
+
+    let location: String = "Sliema, Malta".to_string();
+    let title: String = String::from("IT Engineer");
+
+    let title_slice = &title;
+
+    println!("Hi, my name is {}.", name);
+    println!("I live in {}.", location);
+    println!("This name is {} characters long.", name.len());
+    println!("My title is {}.", title);
+    println!("Title as a string slice: {}.", title_slice);
 
 }
