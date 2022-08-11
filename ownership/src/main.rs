@@ -12,9 +12,9 @@ fn main() {
 
     let val: i32 = 0;
     add_one(val);
-    println!("{}",val);
+    println!("{}",val); // prints 0
 
     let mut val: i32 = 0;
     val = add_one(val);
-    println!("{}", val);
+    println!("{}", val); // prints 1
 }
